@@ -1,0 +1,1230 @@
+/* Global Styles */
+section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bfa5), to(#e6f8f6));
+  background: linear-gradient(#00bfa5, #e6f8f6);
+  /* padding-top: 15vh; */
+  min-height: 93vh;
+  color: grey;
+  /* padding-bottom: 80px; */
+}
+
+
+a {
+  color: #00bfa5;
+
+}
+
+a:hover {
+  color: #158a7a;
+}
+
+button {
+  padding: 1rem 2rem;
+  width: 250px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #00bfa5;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background: #158a7a;
+  color: white;
+}
+
+#myTeams, #myPlayers, #myTrainings, #myGames, #myExercises, #mySettings, #myTournaments, .search-container, .search-container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background: #00bfa5;
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  z-index: 100;
+}
+
+.header h1 {
+  margin-top: 20px;
+}
+
+.header #back {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.header #avatar {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  background: white;
+  border-radius: 50%;
+}
+
+#myTeams, #myPlayers, #myTrainings, #myGames, #myExercises, #mySettings, #myTournaments {
+  min-width: 100vw;
+  min-height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards-container {
+  min-width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards-container #sinRegistro {
+  margin: 5vw;
+  color: white;
+  text-align: center;
+}
+
+#team-card, #player-card, #player-card-phone, #train-card, #ex-card {
+  width: 346px;
+  margin: 0.5rem;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.close {
+  background: transparent;
+  color: #E2574C;
+  margin: auto;
+  width: 95vw;
+  text-align: right;
+}
+
+.close:hover {
+  background: transparent;
+  color: #E2574C;
+}
+
+.newTeam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.newTeam button {
+  margin: auto;
+}
+
+#modalNew {
+  background: white;
+}
+
+#modalNew label {
+  color: #158a7a;
+  margin-left: 8px;
+}
+
+#modalNew #type {
+  color: #158a7a;
+  text-align: center;
+}
+
+#modalNew input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+#modalNew input:focus, #modalNew .form-line-active textarea:focus {
+  border: 1px solid #158a7a !important;
+  box-shadow: 0 0 3px #158a7a !important;
+  -moz-box-shadow: 0 0 3px #158a7a !important;
+  -webkit-box-shadow: 0 0 3px #158a7a !important;
+}
+
+#modalNew input:focus, #modalNew textarea:focus, #modalNew select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+
+select {
+  padding: 0.5rem;
+  display: block;
+  margin: auto;
+}
+
+.btnModal {
+  padding: 0.5rem;
+  width: 240px;
+  margin: auto;
+  margin-bottom: 1.3rem;
+}
+
+.search-container {
+  margin-top: 5px;
+  width: 100vw;
+}
+
+.search-container .search {
+  margin-bottom: 3vh;
+}
+
+.search-container input[type=text] {
+  padding: 6px 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.5rem;
+  min-width: 40vw;
+}
+
+.search-container button {
+  margin-left: 2vw;
+  padding: 2px;
+  width: 8vw;
+  background: white;
+  color: #00bfa5;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 1.8vw;
+  }
+  h2 {
+    font-size: 1.3vw;
+  }
+  .header {
+    top: 7vh;
+  }
+  .header #avatar {
+    display: none;
+  }
+  #team-card {
+    width: 332px;
+    margin: 2rem;
+  }
+  .search-container {
+    margin-top: 5vh;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-link:hover, .header-link:active {
+  -webkit-animation: underlineAnimation 1s forwards ease;
+          animation: underlineAnimation 1s forwards ease;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100vw;
+  background-color: #00bfa5;
+  color: #FFFFFF;
+  text-align: center;
+  max-height: 7vh;
+  background-color: #00bfa5;
+}
+
+nav ul {
+  margin-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  /* separar en 2 columnas el logo y el menu */
+  /* centrar li */
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.navbar {
+  background-color: #00bfa5;
+  text-align: center;
+  color: white;
+}
+
+#logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  font-family: 'Paytone One', sans-serif;
+  color: white;
+  font-size: 3.3vh;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 5vw;
+  cursor: pointer;
+}
+
+.active-link {
+  border: 3px solid white;
+  border-radius: 0.5rem;
+}
+
+#logo:hover {
+  border: none;
+  text-decoration: none;
+}
+
+@-webkit-keyframes underlineAnimation {
+  from {
+    border: 3px solid transparent;
+    border-radius: 0px;
+  }
+  to {
+    border: 3px solid white;
+    border-radius: 0.5rem;
+  }
+}
+
+@keyframes underlineAnimation {
+  from {
+    border: 3px solid transparent;
+    border-radius: 0px;
+  }
+  to {
+    border: 3px solid white;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  nav {
+    text-align: center;
+  }
+  #logo {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .active-link {
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.footer {
+  padding-top: 0.5%;
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 3.3vh;
+  font-weight: 600;
+  text-align: center;
+  background-color: #00bfa5;
+  color: white;
+  padding-bottom: 0;
+  font-family: 'Paytone One', sans-serif;
+}
+
+section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bfa5), to(#34a1af));
+  background: linear-gradient(#00bfa5, #34a1af);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Paytone One', sans-serif;
+}
+
+#up, #down {
+  position: fixed;
+}
+
+#up img, #down img {
+  color: #00bfa5;
+  -webkit-box-shadow: 1px 1px #00bfa5;
+          box-shadow: 1px 1px #00bfa5;
+}
+
+#up {
+  top: 48%;
+  right: 1%;
+}
+
+#down {
+  top: 52%;
+  right: 1%;
+}
+
+.intro, .landing1, .landing2, .landing3, .about {
+  padding-top: 7vh;
+  min-height: 93vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+.intro #logo, .landing1 #logo, .landing2 #logo, .landing3 #logo, .about #logo {
+  font-size: 120px;
+  font-family: 'Paytone One', sans-serif;
+  grid-area: logo;
+  -webkit-animation: fill 0.5s ease forwards 3.5s;
+          animation: fill 0.5s ease forwards 3.5s;
+}
+
+.intro .ball, .landing1 .ball, .landing2 .ball, .landing3 .ball, .about .ball {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0%;
+  -webkit-animation: apear 3s ease forwards 3.2s;
+          animation: apear 3s ease forwards 3.2s;
+}
+
+.intro .ball1, .landing1 .ball1, .landing2 .ball1, .landing3 .ball1, .about .ball1 {
+  grid-area: afootball;
+}
+
+.intro .ball2, .landing1 .ball2, .landing2 .ball2, .landing3 .ball2, .about .ball2 {
+  grid-area: badminton;
+}
+
+.intro .ball3, .landing1 .ball3, .landing2 .ball3, .landing3 .ball3, .about .ball3 {
+  grid-area: volley;
+}
+
+.intro .ball4, .landing1 .ball4, .landing2 .ball4, .landing3 .ball4, .about .ball4 {
+  grid-area: tenis;
+  padding-top: 15vh;
+}
+
+.intro .ball5, .landing1 .ball5, .landing2 .ball5, .landing3 .ball5, .about .ball5 {
+  grid-area: basket;
+}
+
+.intro .ball6, .landing1 .ball6, .landing2 .ball6, .landing3 .ball6, .about .ball6 {
+  grid-area: soccer;
+  padding-top: 10vh;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 374.89px;
+  stroke-dashoffset: 374.89px;
+  -webkit-animation: line-anim 2s ease forwards;
+          animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 387.04px;
+  stroke-dashoffset: 387.04px;
+  -webkit-animation: line-anim 2s ease forwards 0.4s;
+          animation: line-anim 2s ease forwards 0.4s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 286.05px;
+  stroke-dashoffset: 286.05px;
+  -webkit-animation: line-anim 2s ease forwards 0.8s;
+          animation: line-anim 2s ease forwards 0.8s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 225.15px;
+  stroke-dashoffset: 225.15px;
+  -webkit-animation: line-anim 2s ease forwards 1.2s;
+          animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 266.4px;
+  stroke-dashoffset: 266.4px;
+  -webkit-animation: line-anim 2s ease forwards 1.6s;
+          animation: line-anim 2s ease forwards 1.6s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 263.07px;
+  stroke-dashoffset: 263.07px;
+  -webkit-animation: line-anim 2s ease forwards 2s;
+          animation: line-anim 2s ease forwards 2s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 304.32px;
+  stroke-dashoffset: 304.31px;
+  -webkit-animation: line-anim 2s ease forwards 2.4s;
+          animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 422.81px;
+  stroke-dashoffset: 422.81px;
+  -webkit-animation: line-anim 2s ease forwards 2.8s;
+          animation: line-anim 2s ease forwards 2.8s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    /* fill: #e94e21; */
+    /* fill: #2b47b3; */
+    fill: white;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    /* fill: #e94e21; */
+    /* fill: #2b47b3; */
+    fill: white;
+  }
+}
+
+@-webkit-keyframes apear {
+  from {
+    opacity: 0%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@keyframes apear {
+  from {
+    opacity: 0%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+.sun {
+  grid-area: sun;
+}
+
+.sun img {
+  width: 180px;
+  -webkit-animation: sunMoves 2s ease-in 3s infinite;
+          animation: sunMoves 2s ease-in 3s infinite;
+}
+
+@-webkit-keyframes sunMoves {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    opacity: 100%;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    opacity: 20%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@keyframes sunMoves {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    opacity: 100%;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    opacity: 20%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+.promo1 {
+  grid-area: promo1;
+  font-size: 15vw;
+}
+
+.promo2 {
+  grid-area: promo2;
+  font-size: 3vw;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.mountain {
+  grid-area: mountain;
+}
+
+.mountain #mountain {
+  width: 65vw;
+}
+
+.mountain #handshake {
+  position: relative;
+}
+
+.landing2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing2 .pictureTeam {
+  padding: 14rem;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.landing2 .pictureTeam img {
+  width: 40vw;
+}
+
+.landing2 .promo3 {
+  padding: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing2 .promo3 h2 {
+  font-size: 5vw;
+}
+
+.landing2 #register {
+  background-color: #158a7a;
+  padding: 2rem;
+  color: white;
+}
+
+#landing3 {
+  background: white;
+}
+
+.landing3 {
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  justify-items: end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.landing3 #star1, .landing3 #star2, .landing3 #star3, .landing3 #star4 {
+  position: relative;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+.landing3 #star1 {
+  width: 5%;
+  left: 5vw;
+  -webkit-animation: sunMoves 2s ease-in 3s infinite;
+          animation: sunMoves 2s ease-in 3s infinite;
+  -webkit-animation: moving 1.6s ease-in-out 3s infinite;
+          animation: moving 1.6s ease-in-out 3s infinite;
+}
+
+.landing3 #star2 {
+  width: 8%;
+  left: 15vw;
+  -webkit-animation: sunMoves 2s ease-in 3s infinite;
+          animation: sunMoves 2s ease-in 3s infinite;
+  -webkit-animation: moving 1.4s ease-in-out 3s infinite;
+          animation: moving 1.4s ease-in-out 3s infinite;
+}
+
+.landing3 #star3 {
+  width: 6%;
+  left: 20vw;
+  -webkit-animation: sunMoves 2s ease-in 3s infinite;
+          animation: sunMoves 2s ease-in 3s infinite;
+  -webkit-animation: moving 1.8s ease-in-out 3s infinite;
+          animation: moving 1.8s ease-in-out 3s infinite;
+}
+
+.landing3 #star4 {
+  width: 3%;
+  left: 25vw;
+  -webkit-animation: sunMoves 2s ease-in 3s infinite;
+          animation: sunMoves 2s ease-in 3s infinite;
+  -webkit-animation: moving 2s ease-in-out 3s infinite;
+          animation: moving 2s ease-in-out 3s infinite;
+}
+
+.landing3 .promo3 {
+  width: 50vw;
+  padding: 5vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.landing3 .promo3 h2 {
+  color: #00bfa5;
+  font-size: 4vw;
+  margin-bottom: 2rem;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.landing3 .promo3 h2:hover {
+  font-size: 4.2vw;
+  color: #158a7a;
+}
+
+.landing3 .promo3 a {
+  color: white;
+  background: #158a7a;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.landing3 .promo3 a:hover {
+  background: #00bfa5;
+  padding: 0.7rem 2.2rem;
+  text-decoration: none;
+}
+
+.landing4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing4 .how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing4 .how h2 {
+  padding: 1rem;
+  font-size: 2vw;
+}
+
+.landing4 .how img {
+  height: 480px;
+  border-radius: 0.5rem;
+}
+
+.about {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+}
+
+.about #about {
+  color: #00bfa5;
+  margin-bottom: 1rem;
+}
+
+.about .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.about .people .person {
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 28vw;
+}
+
+.about .people .person img {
+  width: 10vw;
+  border-radius: 60%;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.about .people .person img:hover {
+  width: 10.5vw;
+}
+
+.about .people .person h2 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+  font-size: 26px;
+  padding: 0.5rem;
+}
+
+.about .people .person h2:hover {
+  color: #00bfa5;
+}
+
+.about .people .person p {
+  text-align: justify;
+}
+
+.about .people .person a {
+  color: #158a7a;
+  font-size: 20px;
+}
+
+.about .people .person a:hover {
+  font-size: 22px;
+  color: #00bfa5;
+}
+
+@media (max-width: 800px) {
+  .intro {
+    min-height: 20vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro .balls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro .balls .ball {
+    display: none;
+  }
+  .intro .balls .ball6 {
+    display: block;
+  }
+  .landing1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: flex-start;
+  }
+  .landing1 .sun img {
+    width: 10vw;
+    margin-left: 10vw;
+  }
+  .landing1 .promo1 {
+    margin-left: 15vw;
+  }
+  .landing1 .promo2 {
+    font-size: 8vw;
+    margin-left: 3vh;
+  }
+  .landing1 .mountain {
+    margin-left: 3vw;
+    margin-top: 70px;
+  }
+  .landing1 .mountain #mountain {
+    width: 100vw;
+  }
+  .landing2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .landing2 .pictureTeam {
+    padding: 14rem;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .landing2 .pictureTeam img {
+    width: 80vw;
+  }
+  .landing2 .promo3 {
+    padding: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .landing2 .promo3 h2 {
+    font-size: 10vw;
+  }
+  .landing2 #register {
+    background-color: #158a7a;
+    padding: 2rem;
+    color: white;
+  }
+  .landing3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .landing3 .promo3 {
+    padding: 5vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .landing3 .promo3 h2 {
+    color: #00bfa5;
+    font-size: 10vw;
+    margin-bottom: 2rem;
+  }
+  .landing3 .promo3 a {
+    color: white;
+    background: #158a7a;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+  }
+  .landing3 .promo3 a:hover {
+    background: #00bfa5;
+    padding: 0.7rem 2.2rem;
+    text-decoration: none;
+  }
+  .landing3 #plants {
+    display: none;
+  }
+  .landing4 .how {
+    margin-bottom: 5vh;
+  }
+  .landing4 .how:first-child {
+    margin-top: 5vh;
+  }
+  .landing4 .how h2 {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .about {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: grey;
+  }
+  .about #about {
+    color: #00bfa5;
+    margin-bottom: 1rem;
+  }
+  .about .people {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+  }
+  .about .people .person {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 80vw;
+  }
+  .about .people .person img {
+    width: 60vw;
+    border-radius: 60%;
+  }
+  .about .people .person p {
+    text-align: justify;
+  }
+  .about .people .person a {
+    color: #158a7a;
+  }
+  #logo {
+    width: 70vw;
+  }
+  #up, #down {
+    width: 3vw;
+  }
+}
+
+@media (min-width:801px){
+  .balls{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: 
+    ". . afootball badminton soccer . ."
+    ". . . logo . . ."
+    ". . volley tenis basket . ." 
+  }
+
+  .landing1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 5vh 20vh 30vh 30vh 10vh 5vh;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    ". . . . . ."
+    "sun sun . promo1 promo1 promo1"
+    "promo2 promo2  mountain mountain mountain mountain"
+    "promo2 promo2  mountain mountain mountain mountain"
+    ". . mountain mountain mountain mountain"
+    ". . . . . ."
+    
+  }
+  h1{
+    font-size: 40vw;
+  }
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
